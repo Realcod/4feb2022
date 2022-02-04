@@ -1,0 +1,22 @@
+//wap to count number of 1s in binary number
+
+#include<iostream>
+using namespace std;
+
+int countone(int n){
+	int count=0;
+	while(n>0){
+		n=n&n-1;
+		count++;
+	}
+	return count;
+}
+
+int main(){
+	int n;
+	cout<<"Enter the number to check ones in binary number"<<endl;
+	cin>>n;
+	
+	int countof1=countone(n);
+	cout<<countof1<<endl;
+}
