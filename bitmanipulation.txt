@@ -1,0 +1,20 @@
+//wap to check given number is power of 2 or not
+
+#include<iostream>
+using namespace std;
+
+bool poweroftwo(int n){
+	if(n>0&&!(n&n-1)){
+		return true;
+	}
+	return false;
+}
+
+int main(){
+	int n;
+	cout<<"Enter the number which is power of 2"<<endl;
+	cin>>n;
+	
+	bool ispower=poweroftwo(n);
+	cout<<ispower<<endl;
+}
